@@ -11,5 +11,3 @@ export default function HomeScreen({navigation}) {
   );
 }
 
-
-const styles=StyleSheet.create
