@@ -11,7 +11,9 @@ export default function ListScreen() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text> Here you have a list</Text>
-       <FlatList data={CardsInfo} renderItem={showItem} keyExtractor={item => item.index}/>
+        <FlatList horizontal  data={CardsInfo} renderItem={showItem} keyExtractor={item => item.index}/>
+       <FlatList horizontal showsHorizontalScrollIndicator='false' data={CardsInfo} renderItem={showItem} keyExtractor={item => item.index}/>
+       <FlatList showsVerticalScrollIndicator='false'  data={CardsInfo} renderItem={showItem} keyExtractor={item => item.index}/>
     </View>
   );
 }
