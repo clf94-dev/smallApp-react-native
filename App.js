@@ -9,6 +9,7 @@ import TextScreen from './screens/TextScreen';
 import ListScreen from './screens/ListScreen';
 import ButtonsDemo from './screens/ButtonsDemo';
 import SwitchScreen from './screens/SwitchScreen';
+import TextInputScreen from './screens/TextInputScreen';
 
 
 const Stack = createStackNavigator();
@@ -22,7 +23,8 @@ function App() {
         <Stack.Screen name="List" component={ListScreen} />
         <Stack.Screen name="ColorButton" component={ButtonsDemo} />
         <Stack.Screen name="SwitchDemo" component={SwitchScreen} />
-      </Stack.Navigator>
+        <Stack.Screen name="TextInputDemo" component={TextInputScreen} />
+      </Stack.Navigator>                     
     </NavigationContainer>
   );
 }
