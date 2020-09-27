@@ -8,6 +8,7 @@ export default function HomeScreen({navigation}) {
       <Button title='Go To Text' color='blue' onPress={() => navigation.navigate('Text')}/>
       <Button title='Go To List'  onPress={() => navigation.navigate('List')}/>
       <Button title='Go To Buttons' onPress={() => navigation.navigate('ColorButton')}/>
+      <Button title='Go To Switch' onPress={() => navigation.navigate('SwitchDemo')}/>
     </View>
   );
 }

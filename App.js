@@ -8,6 +8,7 @@ import HomeScreen from './screens/HomeScreen';
 import TextScreen from './screens/TextScreen';
 import ListScreen from './screens/ListScreen';
 import ButtonsDemo from './screens/ButtonsDemo';
+import SwitchScreen from './screens/SwitchScreen';
 
 
 const Stack = createStackNavigator();
@@ -20,6 +21,7 @@ function App() {
         <Stack.Screen name="Text" component={TextScreen} />
         <Stack.Screen name="List" component={ListScreen} />
         <Stack.Screen name="ColorButton" component={ButtonsDemo} />
+        <Stack.Screen name="SwitchDemo" component={SwitchScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
